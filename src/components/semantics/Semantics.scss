@@ -1,0 +1,46 @@
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #222222;
+    color: #ffffff;
+    display: flex;
+    // align-items: center;
+    // z-index: 1000;
+    padding: 2vh 4%;
+    // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+nav {
+    position: static;
+}
+section {
+    position: static;
+    background-color: transparent;
+    width: 80%;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 15vh;
+}
+main {
+    flex: 1;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #222222;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 2vh 4%;  
+}
+footer address{
+    color: #ffffff;
+}
+footer .card {
+    background-color: transparent;
+}

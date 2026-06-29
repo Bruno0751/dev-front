@@ -1,17 +1,63 @@
+import { GTable } from "../components/GTable";
 import useListarVideos from "./hook/useListarVideos";
-import { Card, Col, Row } from "react-bootstrap";
 
 export default function ListarVideos() {
   const hook = useListarVideos();
 
   return (
-    <Card>
-      <Card.Header>
-        <Card.Title>
-          {hook.t("labelNome")}
-        </Card.Title>
-      </Card.Header>
-      <Card.Body></Card.Body>
-    </Card>
+    <GTable column={3} data={hook.list}>
+      {/* <thead>
+        <tr>
+          <th>#</th>
+          {Array.from({ length: 3 }).map(
+            (_, index) => (
+              <th key={index}>Table heading</th>
+            )
+          )}
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          {Array.from({ length: 3 }).map(
+            (_, index) => (
+              <td key={index}>
+                Table cell {index}
+              </td>
+            )
+          )}
+        </tr>
+        <tr>
+          <td>2</td>
+          {Array.from({ length: 3 }).map(
+            (_, index) => (
+              <td key={index}>
+                Table cell {index}
+              </td>
+            )
+          )}
+        </tr>
+        <tr>
+          <td>3</td>
+          {Array.from({ length: 3 }).map(
+            (_, index) => (
+              <td key={index}>
+                Table cell {index}
+              </td>
+            )
+          )}
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>#</th>
+          {Array.from({ length: 3 }).map(
+            (_, index) => (
+              <th key={index}>Table heading</th>
+            )
+          )}
+        </tr>
+      </tfoot> */}
+    </GTable>
   );
 }

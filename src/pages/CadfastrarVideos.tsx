@@ -1,4 +1,4 @@
-import GInput from "../components/GInput";
+import { GButton } from "../components/GButton";
 import { GForm } from "../components/GForm";
 import useCadastraVideo from "./hook/useCadastraVideo";
 import { Form } from "react-bootstrap";
@@ -7,7 +7,7 @@ export default function CadfastrarVideos() {
   const hook = useCadastraVideo();
 
   return (
-    <GForm>
+    <GForm onSubmit={hook.formik.handleSubmit}>
       <Form.Group
         className="mb-3"
         controlId="nome"
@@ -19,13 +19,11 @@ export default function CadfastrarVideos() {
           type="text"
           placeholder={hook.t("labelNome")}
         />
-      </Form.Group>
 
-      <GInput
-        type="text"
-        label={hook.t("labelNome")}
-        name="txtNome"
-      />
+        <GButton type="submit" variant="primary">
+          Enviar
+        </GButton>
+      </Form.Group>
     </GForm>
   );
 }

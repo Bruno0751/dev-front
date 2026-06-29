@@ -4,17 +4,17 @@ const CadastrarVideos = lazy(
   () => import("../pages/CadfastrarVideos.tsx")
 );
 const ListarVideos = lazy(
-  () => import("../pages/CadfastrarVideos.tsx")
+  () => import("../pages/ListarVideos.tsx")
 );
 
 export const routes = [
   {
-    path: "/x",
+    path: "/",
     element: <ListarVideos />,
   },
   {
-    // path: "/cadastrar",
-    path: "/",
+    path: "/cadastrar",
+    // path: "/",
     element: <CadastrarVideos />,
   },
 ];
