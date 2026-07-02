@@ -1,2 +1,2 @@
 export const INICIO = "/";
-export const CADASTRAR = "/cadastrar"
+export const CADASTRAR = "/cadastrar";

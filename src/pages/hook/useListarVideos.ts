@@ -4,8 +4,7 @@ import axios from "axios";
 
 export default function useListarVideos() {
   const { t } = useTranslation(["video"]);
-  const [list, setList] =
-    useState<any>();
+  const [list, setList] = useState<any>();
 
   useEffect(() => {
     findAll();
@@ -16,7 +15,7 @@ export default function useListarVideos() {
       const response = await axios.get(
         "http://localhost:9090/v1/produto"
       );
-      console.log(response.data)
+      console.log(response.data);
       setList(response.data);
     } catch (error) {
       console.error(error);

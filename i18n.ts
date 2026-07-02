@@ -3,13 +3,13 @@ import { initReactI18next } from "react-i18next";
 
 const resources = {
   br: {
-    buttons: {
-    },
+    buttons: {},
     navbar: {
       cadastrar: "Cadastrar",
     },
     footer: {
-      rodaPe: " Bruno Gressler da Silveira. Todos os direitos reservados",
+      rodaPe:
+        " Bruno Gressler da Silveira. Todos os direitos reservados",
     },
     video: {
       labelNome: "Nome: ",

@@ -1,7 +1,6 @@
 import {
   Container,
   Table,
-  Row,
 } from "react-bootstrap";
 import type { ReactNode } from "react";
 import "./style.css";
@@ -14,8 +13,8 @@ export interface GTableProps {
   data?: any | undefined;
 }
 export function GTable(props: GTableProps) {
-  console.log("table")
-  console.log(props.data)
+  console.log("table");
+  console.log(props.data);
   return (
     <Container>
       <Table
@@ -26,7 +25,6 @@ export function GTable(props: GTableProps) {
       >
         <thead>
           <tr>
-            <th>#</th>
             {Array.from({
               length: props.column ?? 0,
             }).map((_, index) => (
@@ -36,16 +34,15 @@ export function GTable(props: GTableProps) {
         </thead>
         <tbody>
           <tr>
-            {/* {Array.from({
-              length: props.data ?? 0,
+            {Array.from({
+              length: props.column ?? 0,
             }).map((_, index) => (
-              <td key={index}>1</td>
-            ))} */}
+              <td key={index}>jkshiu</td>
+            ))}
           </tr>
         </tbody>
         <tfoot>
           <tr>
-            <th>#</th>
             {Array.from({
               length: props.column ?? 0,
             }).map((_, index) => (
